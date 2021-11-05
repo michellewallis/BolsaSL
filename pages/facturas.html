@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/facturas.css">
+
+    <title>Facturas</title>
+</head>
+<body>
+
+    <!-- Método de búsqueda -->
+
+    <div class="selectMethod">
+
+        <label for="method">Método de búsqueda</label>
+
+                <select name="method" id="method">
+                    <option selected="true" disabled="disabled">Selecciona una opción</option>
+                    <option value="Total facturas">Total facturas</option>
+                    <option value="Facturas por fechas">Facturas por fechas</option>                
+                </select>
+
+        <br><br>
+        <label for="start">Start date:</label>
+
+        <input type="date" id="start" name="start" value="2021-01-01" min="2021-01-01" max="2021-12-31">
+
+        <label for="end">End date:</label>
+        <input type="date" id="end" name="end" value="2021-01-01" min="2021-01-01" max="2021-12-31">
+
+    </div>
+
+
+    <!-- Contenedor de facturas totales -->
+
+    <div class="containerTotalBills">
+
+        Facturas totales
+
+
+    </div>
+
+    <!-- Contenedor de facturas por fechas -->
+
+
+    <div class="containerDateBills">
+
+        Facturas por fechas
+
+    </div>
+
+
+
+
+    <script src="../scripts/facturas.js"></script>
+    
+</body>
+</html>
