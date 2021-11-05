@@ -15,23 +15,25 @@
 
         <section class="container1" id="container1">
             <h1 class="titleContainer1">Comprar acciones</h1>
-            <form>
+            <form id="formTransaction">
 
                 <label for="typeCompany">¿En qué tipo de empresa?</label>
 
                 <select name="typeCompany" id="typeCompany">
-                <option value="tech">Tecnología y comunicación</option>
-                <option value="auto">Automoción</option>    
+                    <option selected="true" disabled="disabled">Seleccione tipo de empresa</option>
+                <option value="Tecnología y comunicación">Tecnología y comunicación</option>
+                <option value="Automoción">Automoción</option>    
                 </select>
 
                 <label for="company">¿En qué empresa?</label>
 
                 <select name="company" id="company">
-                <option value="google">Google</option>
-                <option value="facebook">Facebook</option> 
-                <option value="mercedes">Mercedes</option>
-                <option value="ferrari">Ferrari</option>
-                <option value="lamborghini">Lamborghini</option>   
+                <option selected="true" disabled="disabled">Seleccione empresa</option>
+                <option id="Google" value="Google">Google</option>
+                <option id="Facebook" value="Facebook">Facebook</option> 
+                <option id="Mercedes" value="Mercedes">Mercedes</option>
+                <option id="Ferrari" value="Ferrari">Ferrari</option>
+                <option id="Lamborghini" value="Lamborghini">Lamborghini</option>   
                     
                 </select>
 
@@ -50,23 +52,19 @@
         </section>
 
         <section class="container2" id="container2">
-                <h1 class="titleContainer2">Carrito</h1>        
+                <h1 class="titleContainer2">Carrito</h1>
+                
+                <div id="transactionContainer">
             
-                <ul class="containerObject">
-                    <li class="item1">Tipo de empresa: Automoción</li>
-                    <li class="item2">Empresa: Mercedes</li>
-                    <li class="item3">Número de acciones: 2</li>
-                    <li class="item4">Precio unitario:100</li>
-                    <li class="item5">Total: 200</li>  
-                </ul>  
+                    <!-- <ul class="containerObject">
+                        <li class="item1">Tipo de empresa: Automoción</li>
+                        <li class="item2">Empresa: Mercedes</li>
+                        <li class="item3">Número de acciones: 2</li>
+                        <li class="item4">Precio unitario:100</li>
+                        <li class="item5">Total: 200</li>  
+                    </ul>   -->
 
-                <ul class="containerObject">
-                    <li class="item1">Tipo de empresa: Automoción</li>
-                    <li class="item2">Empresa: Mercedes</li>
-                    <li class="item3">Número de acciones: 2</li>
-                    <li class="item4">Precio unitario:100</li>
-                    <li class="item5">Total: 200</li>  
-                </ul> 
+                </div>
                 
                 <input type="button" class="confirmPurchase" id= "confirmPurchase" value="Confirmar compra">
                 
