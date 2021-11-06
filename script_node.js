@@ -2,6 +2,7 @@
 
 const express = require('express');
 const bodyParser = require('body-parser')
+
 const app = express();
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 app.get('/', (req, res) => {
@@ -10,7 +11,15 @@ app.get('/', (req, res) => {
 app.get('/registro', (req, res) => {
     res.sendFile(__dirname + '/pages/registro.html');
   });
-  
+app.get('/consulta', (req, res) => {
+    res.sendFile(__dirname + '/pages/consulta.html');
+  });
+app.get('/transacciones', (req, res) => {
+    res.sendFile(__dirname + '/pages/transacciones.html');
+  });
+app.get('/facturas', (req, res) => {
+    res.sendFile(__dirname + '/pages/facturas.html');
+  });  
 app.post('/', urlencodedParser, (req, res) => {
     console.log('First Name:', req.body.first_name, '\nLast Name: ', req.body.last_name, '\nEmail: ', req.body.email);
     res.send(req.body);
@@ -53,4 +62,3 @@ connection.query(query_U_V,(err,response)=>{
     connection.end();
 })}
 
-window.validar_Usuario=validar_Usuario
