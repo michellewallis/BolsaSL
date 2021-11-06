@@ -14,30 +14,38 @@
 
     <!-- Método de búsqueda -->
 
-    <div class="selectMethod">
+    <div class="selectMethod" id="selectMethod">
 
         <label for="method">Método de búsqueda</label>
 
-                <select name="method" id="method">
-                    <option selected="true" disabled="disabled">Selecciona una opción</option>
-                    <option value="Total facturas">Total facturas</option>
-                    <option value="Facturas por fechas">Facturas por fechas</option>                
-                </select>
+        <select name="method" id="method">
+            <option selected="true" disabled="disabled">Selecciona una opción</option>
+            <option id="TotalFacturas" value="Total facturas">Total facturas</option>
+            <option id="FacturasFechas" value="Facturas por fechas">Facturas por fechas</option>                
+        </select>
 
         <br><br>
-        <label for="start">Start date:</label>
 
-        <input type="date" id="start" name="start" value="2021-01-01" min="2021-01-01" max="2021-12-31">
+    
+        <div class="dateContainer" id="dateContainer">
+            <label for="start">Start date:</label>
+            <input type="date" id="start" name="start" value="2021-01-01" min="2021-01-01" max="2021-12-31">
 
-        <label for="end">End date:</label>
-        <input type="date" id="end" name="end" value="2021-01-01" min="2021-01-01" max="2021-12-31">
+            <label for="end">End date:</label>
+            <input type="date" id="end" name="end" value="2021-01-01" min="2021-01-01" max="2021-12-31">
+        </div>
+  
+
+        <br><br>
+
+        <input type="button" id="btn-search" value="Buscar">
 
     </div>
 
 
     <!-- Contenedor de facturas totales -->
 
-    <div class="containerTotalBills">
+    <div class="containerTotalBills" id="containerTotalBills" >
 
         Facturas totales
 
@@ -47,11 +55,13 @@
     <!-- Contenedor de facturas por fechas -->
 
 
-    <div class="containerDateBills">
+    <div class="containerDateBills" id="containerDateBills">
 
         Facturas por fechas
 
     </div>
+
+    <input type="button" id="btn-porfi" value="Comprobar">
 
 
 

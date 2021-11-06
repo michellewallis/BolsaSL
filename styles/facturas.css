@@ -4,9 +4,14 @@
 
 .containerTotalBills{
     border:1px solid red;
+    display:none;
 }
 
 .containerDateBills{
     border:1px solid green;
+    display:none;
 }
 
+.dateContainer{
+    display:none;
+}
