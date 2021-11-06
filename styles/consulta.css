@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'LogoFont';
+  src: url('../assets/fonts/GreatVibes-Regular.ttf');
+}
+@font-face {
+  font-family: 'ParagraphFont';
+  src: url('../assets/fonts/LibreBaskerville-Regular.ttf');
+}
+
 body {
     background-color: rgb(128, 172, 253); /* Color de fondo */
 }
@@ -22,6 +31,7 @@ label {
     font-weight: normal;
     font-size: 25px;
     font-family: Arial;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-align: center;
+    font-family: "ParagraphFont";
   }
