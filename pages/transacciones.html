@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/transacciones.css">
+
+    <title>Transacciones</title>
+</head>
+<body>
+
+    <div class="bodyContainer">
+
+        <section class="container1" id="container1">
+            <h1 class="titleContainer1">Comprar acciones</h1>
+            <form id="formTransaction">
+
+                <label for="typeCompany">¿En qué tipo de empresa?</label>
+
+                <select name="typeCompany" id="typeCompany">
+                    <option selected="true" disabled="disabled">Seleccione tipo de empresa</option>
+                <option value="Tecnología y comunicación">Tecnología y comunicación</option>
+                <option value="Automoción">Automoción</option>    
+                </select>
+
+                <label for="company">¿En qué empresa?</label>
+
+                <select name="company" id="company">
+                <option selected="true" disabled="disabled">Seleccione empresa</option>
+                <option id="Google" value="Google">Google</option>
+                <option id="Facebook" value="Facebook">Facebook</option> 
+                <option id="Mercedes" value="Mercedes">Mercedes</option>
+                <option id="Ferrari" value="Ferrari">Ferrari</option>
+                <option id="Lamborghini" value="Lamborghini">Lamborghini</option>   
+                    
+                </select>
+
+                <p id="price">Precio unitario: 100€</p>
+
+                <label for="quantity">¿Cuántas acciones?</label>
+                <input type="number" id="quantity" name="quantity">
+
+                <br><br>
+
+                <input type="button" id= "buttonPurchase" value="Comprar"> <br><br>
+                <input type="button" id= "nextPurchase" value="Seguir comprando">
+
+            </form>
+
+        </section>
+
+        <section class="container2" id="container2">
+                <h1 class="titleContainer2">Carrito</h1>
+                
+                <div id="transactionContainer">
+            
+                  <!-- Añadir datos carrito -->
+
+                </div>
+                
+                <input type="button" class="confirmPurchase" id= "confirmPurchase" value="Confirmar compra">
+                
+        </section>
+            
+
+    </div>
+    
+<script defer src="../scripts/transacciones.js"></script>
+
+</body>
+</html>
