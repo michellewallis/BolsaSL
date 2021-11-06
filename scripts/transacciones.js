@@ -74,11 +74,11 @@ nextPurchase.addEventListener('click', function (e) {
     
 //Leemos localStorage y lo dibujamos
 
+let arrTransactions= []
+
 buttonPurchase.addEventListener('click', function (e) { 
         
-        e.preventDefault();
-
-        let arrTransactions= []
+        e.preventDefault();        
 
         for(let i=0; i<localStorage.length; i++) {
         let key = localStorage.key(i);
