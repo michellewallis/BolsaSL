@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(128, 172, 253); /* Color de fondo */
+}
+
+label {
+    display: block;
+    margin: .5em 0 0 0;
+    
+  }
+
+  form {
+    margin: 0 auto;
+    width: 200px;   
+    background-color: snow; 
+    padding: 6px; 
+    border-radius: 10px; 
+ }
+
+
+ h1 {
+    color: #000000;
+    font-weight: normal;
+    font-size: 25px;
+    font-family: Arial;
+    text-transform: uppercase;
+    text-align: center;
+  }
