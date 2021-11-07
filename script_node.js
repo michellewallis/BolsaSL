@@ -26,9 +26,17 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
 app.get('/registro',(req, res)=> {
-    res.sendFile(__dirname + '/pages/registro.html');
-       
+    res.sendFile(__dirname + '/pages/registro.html');       
 });
+app.get('/consulta', (req, res) => {
+    res.sendFile(__dirname + '/pages/consulta.html');
+  });
+app.get('/transacciones', (req, res) => {
+    res.sendFile(__dirname + '/pages/transacciones.html');
+  });
+app.get('/facturas', (req, res) => {
+    res.sendFile(__dirname + '/pages/facturas.html');
+  });
   
 app.post('/logIn', urlencodedParser, (req, res)=>{
         console.log("DNI", req.body.input_dni_login, "password", req.body.input_password_login )

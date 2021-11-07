@@ -1,5 +1,5 @@
 #DROP DATABASE paginabolsa;
- #ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+#ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
 
     CREATE DATABASE paginabolsa;
     USE paginabolsa;
@@ -52,6 +52,3 @@ CREATE TABLE consultas(
      INSERT INTO empresas VALUES(NULL, "Mercedes","Automoción",100,"Calle MuchaPasta 1");
      INSERT INTO empresas VALUES(NULL, "Ferrari","Automoción",100,"Calle YoTengoMas 2");
      INSERT INTO empresas VALUES(NULL, "Lamborghini","Automoción",100,"Calle Fortuna 2");
-     
-     
-     
