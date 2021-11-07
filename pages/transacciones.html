@@ -11,8 +11,26 @@
 </head>
 <body>
 
-    <div class="bodyContainer">
+    <header class="headerFix">
+        
+        <div class="container">
+            
+            <a href="../index.html" class="logo"><img class="imgLogo" src="../assets/images/logo1.png" alt="logo"></a>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="transacciones.html">Nueva transacción</a></li>
+                    <li><a href="facturas.html">Ver facturas</a></li>                                               
+                </ul>
+            </nav>
+            
+        </div>
+        
+        <h2 class="titleWellcome">Usuario conectado: Pepito</h2>
+        
+    </header>
 
+    <main class="bodyContainer">
+    
         <section class="container1" id="container1">
             <h1 class="titleContainer1">Comprar acciones</h1>
             <form id="formTransaction">
@@ -62,10 +80,15 @@
                 
                 <input type="button" class="confirmPurchase" id= "confirmPurchase" value="Confirmar compra">
                 
-        </section>
-            
+        </section>            
 
-    </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="paragraph"> ©2021 Todos los derechos reservados | Bolsa de valores | Tlf: 91 521 45 29</p>
+         </div>
+    </footer>
     
 <script defer src="../scripts/transacciones.js"></script>
 
