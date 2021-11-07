@@ -63,13 +63,6 @@ body{
     color:white;
 }
 
-/* BODYCONTAINER TODA LA SECCIÓN TRANSACCIÓN */
-
-.bodyContainer{
-    margin-top:160px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
 
 /* FOOTER CLIENTE */
@@ -91,31 +84,46 @@ body{
     margin:0px;
 }
 
-
-
 /* CONTENIDO DE LA PÁGINA TRANSACCIÓN */
 
-
 .bodyContainer{
-    border:1px solid blue;  
+    /* border:1px solid blue;   */
     display:flex;
     flex-direction: row;
     justify-content: space-around;
-   
+    margin-top:136px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px; 
+    background-image:url(../assets/images/fondoTransacciones.jpg); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    height: 730px;
 }
 
 .container1{
-    border:1px solid gray;
-    border-radius: 3%;
+    margin-top: 10000px;
+    border:1px solid gray; 
+    background-color: white; 
+    border-radius: 3%; 
     width: 750px;
+    height: 500px;
     margin:15px;
     padding-left: 15px;
     padding-right: 15px;
     
 }
 
+.formTransaction{
+    display:flex;
+    flex-direction: column;
+}
+
 .container2{
     border:1px solid gray;
+    background-color: white;
     width: 750px;
     border-radius: 3%;
     margin:15px;
