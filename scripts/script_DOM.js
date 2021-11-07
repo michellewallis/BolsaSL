@@ -1,5 +1,7 @@
 //HAS CONSULTADO¿?
-const div_consulta_sino= 
+const divsDOM={}
+//DOM REGISTRO.HTML
+divsDOM.div_consulta_sino= 
     `<p>¿Nos ha realizado alguna consulta previamente?</p>
     <button id="registro_si_consultas">SI</button>
     <button id="registro_no_consultas">NO</button>`
@@ -35,22 +37,4 @@ const div_consulta_sino=
     `<label for="input_password_signup">Contraseña</label>
     <input type="password" name="input_password_signup" id="input_password_signup"></input>`
 
-    
-//PINTADO:
-document.getElementById("crearCuenta").addEventListener("click",
-    ()=>{
-        document.getElementById("root_registro").innerHTML=div_consulta_sino
-        //PINTAR REGISTRO COMPLETO
-        document.getElementById("registro_no_consultas").addEventListener("click",
-        ()=>{
-            document.getElementById("root_registro").innerHTML= `<p>Rellena los siguientes campos para realizar su registro en nuestra aplicación de forma gratuita.</p>`+div_registro_nombre + div_registro_DNI + div_registro_telefono +  div_registro_direccion + div_registro_email + div_registro_password + `<button id="finalizar_registro_completo">Registrar</button>`
-        }    
-        )
-    }
-)
-
-async function filtrado_campos_null(){
-    
-}
-console.log(window)
-document.getElementById("button_login").addEventListener("click", window.validar_Usuario())
+module.exports =divsDOM
