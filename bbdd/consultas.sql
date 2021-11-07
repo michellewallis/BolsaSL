@@ -6,7 +6,7 @@
  #Consulta -> Comprobación email (si no existe insertamos clientes)
  INSERT INTO clientes VALUES(NULL, ?,?,?,?,NULL,?);
  
-#Consulta -> Comprobación email (si existe insertamos clientes)
+#Consulta -> Comprobación email (si existe insertamos consulta)
 INSERT INTO consultas VALUES(NULL, ?,?,?);
 
 #Login -> Validar existencia del usuario
